@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Clouds</title>
+    <script src="https://kit.fontawesome.com/596d9b496c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="banner">
+        <img src="images/world.png" class="logo">
+        <h1 id="text">Nepal</h1>
+        <div class="clouds">
+            <img src="images/cloud1.png" style="--i:1;">
+            <img src="images/cloud2.png" style="--i:2;">
+            <img src="images/cloud3.png" style="--i:3;">
+            <img src="images/cloud4.png" style="--i:4;">
+            <img src="images/cloud5.png" style="--i:5;">
+        </div>
+    </div>
+    <div class="container">
+        <section>
+            <h2>Nepal</h2>
+            <p>
+                Nepal, country of Asia, lying along the southern slopes of the Himalayan mountain ranges. It is a
+                landlocked
+                country located between India to the east, south, and west and the Tibet Autonomous Region of China to
+                the
+                north. Its territory extends roughly 500 miles (800 kilometres) from east to west and 90 to 150 miles
+                from
+                north to south. The capital is Kathmandu.
+            </p>
+            <p>
+                Nepal, long under the rule of hereditary prime ministers favouring a policy of isolation, remained
+                closed to
+                the outside world until a palace revolt in 1950 restored the crown’s authority in 1951; the country
+                gained
+                admission to the United Nations in 1955. In 1991 the kingdom established a multiparty parliamentary
+                system.
+                In 2008, however, after a decadelong period of violence and turbulent negotiation with a strong Maoist
+                insurgency, the monarchy was dissolved, and Nepal was declared a democratic republic.
+            </p>
+            <p>
+                Wedged between two giants, India and China, Nepal seeks to keep a balance between the two countries in
+                its
+                foreign policy—and thus to remain independent. A factor that contributes immensely to the geopolitical
+                importance of the country is the fact that a strong Nepal can deny China access to the rich Gangetic
+                Plain;
+                Nepal thus marks the southern boundary of the Chinese sphere north of the Himalayas in Asia.
+            </p>
+            <img src="images/ktm.jpg"><br>
+            <center class="caption">
+                Basantapur Durbar Square
+            </center>
+            <p>
+                As a result of its years of geographic and self-imposed isolation, Nepal is one of the least developed
+                nations of the world. In recent years many countries, including India, China, the United States, the
+                United
+                Kingdom, Japan, Denmark, Germany, Canada, and Switzerland, have provided economic assistance to Nepal.
+                The
+                extent of foreign aid to Nepal has been influenced to a considerable degree by the strategic position of
+                the
+                country between India and China.
+            </p>
+        </section>
+
+        <div class="share">
+            <div class="shareDiv">
+                <h4>SHARE THIS</h4><br>
+                <div class="icons-container">
+                    <i class="fab fa-facebook socialIcons" style="color:#3b5998;"></i>
+                    <i class="fab fa-twitter socialIcons" style="color:#1da1f2;"></i>
+                    <i class="fab fa-instagram socialIcons" style="color:#f56040;"></i>
+                    <i class="fab fa-linkedin socialIcons" style="color:#0077b5;"></i>
+                </div>
+            </div>
+            <div class="goToTop">
+                <button onclick="topFunction()" id="myBtn" class="topBtn">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <script type="text/javascript">
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+            text.style.top = value * 1 + 'px';
+        })
+
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+</body>
+
+</html>
