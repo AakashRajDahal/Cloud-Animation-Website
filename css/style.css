@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+/* Global Styling */
 * {
   font-family: Source Sans Pro;
   margin: 0;
@@ -12,6 +13,7 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Banner Area */
 .logo {
   width: 80px;
   top: 0;
@@ -66,6 +68,7 @@ body {
           animation: animate calc(3s* var(--i)) linear infinite;
 }
 
+/* Cloud Animation */
 @-webkit-keyframes animate {
   0% {
     -webkit-transform: translateX(-100%);
@@ -76,7 +79,6 @@ body {
             transform: translateX(100%);
   }
 }
-
 @keyframes animate {
   0% {
     -webkit-transform: translateX(-100%);
@@ -88,6 +90,7 @@ body {
   }
 }
 
+/* Content */
 .container {
   margin: 0;
 }
@@ -121,6 +124,16 @@ section .caption {
   font-style: italic;
 }
 
+.source {
+  font-size: 16px;
+}
+
+.source a {
+  text-decoration: none;
+  color: #00a0dc;
+}
+
+/* Share Section */
 .share {
   width: 700px;
   background: #f3f3f3;
@@ -176,6 +189,7 @@ section .caption {
   color: #fff;
 }
 
+/* Mobile CSS */
 @media only screen and (max-width: 768px) {
   .banner {
     height: 60vh;
