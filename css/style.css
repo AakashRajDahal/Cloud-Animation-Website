@@ -105,8 +105,17 @@ section {
 }
 
 section h2 {
-  font-size: 2.5em;
+  font-size: 4em;
   margin-bottom: 20px;
+  color: #444;
+}
+
+section .lead {
+  font-weight: light;
+  font-size: 1.5em;
+  color: #aaa;
+  border-left: 8px solid #aaa;
+  padding: 0 10px;
 }
 
 section p {
@@ -215,7 +224,7 @@ section .caption {
 
 @media only screen and (max-width: 768px) {
   .banner {
-    height: 50vh;
+    height: 60vh;
   }
   .banner .logo {
     width: 50px;
