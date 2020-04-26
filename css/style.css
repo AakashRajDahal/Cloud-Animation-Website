@@ -221,6 +221,18 @@ section .caption {
   .share {
     width: auto;
   }
+  section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  section .lead {
+    font-weight: light;
+    font-size: 1.1em;
+    color: #aaa;
+    border-left: 8px solid #aaa;
+    padding: 0 10px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
